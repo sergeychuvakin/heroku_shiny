@@ -56,4 +56,4 @@ server <- function(input, output) {
 
 }
 
-shinyApp(ui = ui, server = server, host = '0.0.0.0', port = 8888)
+shinyApp(ui = ui, server = server)
