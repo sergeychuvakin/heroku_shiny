@@ -9,3 +9,17 @@ just for testing purposes
 6) Your page on heroku will contain your app, so you would be able to stop it.
 
 In fact we need just app.R and run.R for successful deployment
+
+## small git tutorial 
+git clone url_of_repo - copies repo on local file system (FS further)
+git status - chekc if smth was modified
+
+```
+git add . ## adds everything on staging 
+git commit -m 'some message' ## aprove changings 
+git push ## send ahcnges if remote
+
+```
+
+git log - check latest commits
+git pull - take all the changes from remote
