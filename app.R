@@ -44,8 +44,8 @@ server <- function(input, output) {
   #    re-executed when inputs (input$bins) change
   # 2. Its output type is a plot
   output$distPlot <- renderPlot({
-
-    x    <- faithful$waiting
+    data <- read.csv('table.csv')
+    x    <- data$waiting
     bins <- seq(min(x), max(x), length.out = input$bins + 1)
 
     hist(x, breaks = bins, col = "#75AADB", border = "white",
