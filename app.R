@@ -46,7 +46,7 @@ server <- function(input, output) {
   output$distPlot <- renderPlot({
     data <- read.csv('table.csv')
     x    <- data$waiting
-    bins <- seq(min(x), max(x), length.out = input$bins + 1)
+    bins <- seq(min(x), max(x), length.out = input$bins   + 1)
 
     hist(x, breaks = bins, col = "#75AADB", border = "white",
          xlab = "Waiting time to next eruption (in mins)",
