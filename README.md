@@ -11,9 +11,9 @@ just for testing purposes
 In fact we need just app.R and run.R for successful deployment
 
 ## small git tutorial 
-git clone url_of_repo - copies repo on local file system (FS further)
-git status - chekc if smth was modified
-
+git clone url_of_repo - copies repo on local file system (FS further) <br>
+git status - chekc if smth was modified <br>
+<br>
 ```
 git add . ## adds everything on staging 
 git commit -m 'some message' ## aprove changings 
@@ -21,5 +21,5 @@ git push ## send ahcnges if remote
 
 ```
 
-git log - check latest commits
-git pull - take all the changes from remote
+git log - check latest commits<br>
+git pull - take all the changes from remote<br>
