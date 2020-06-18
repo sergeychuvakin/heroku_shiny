@@ -1,4 +1,4 @@
-install.packages('shiny')
+#install.packages('shiny')
 library(shiny)
 
 # Define UI for app that draws a histogram ----
