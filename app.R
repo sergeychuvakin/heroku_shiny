@@ -18,12 +18,13 @@ ui <- fluidPage(
                   label = "Number of bins:",
                   min = 1,
                   max = 50,
-                  value = 30),
-      sliderInput(inputId = "bins2",
-                  label = "Number of bins2:",
-                  min = 1,
-                  max = 50,
                   value = 30)
+      # ,
+      # sliderInput(inputId = "bins2",
+      #             label = "Number of bins2:",
+      #             min = 1,
+      #             max = 50,
+      #             value = 30)
 
     ),
 
@@ -49,8 +50,8 @@ server <- function(input, output) {
   #    re-executed when inputs (input$bins) change
   # 2. Its output type is a plot
   output$distPlot <- renderPlot({
-    data <- read.csv('table.csv')
-    x    <- data$waiting
+    #data <- read.csv('table.csv')
+    x    <- faithful$waiting
     bins <- seq(min(x), max(x), length.out = input$bins   + 1)
 
     hist(x, breaks = bins, col = "#75AADB", border = "white",
